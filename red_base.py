@@ -1,3 +1,5 @@
+#PRUEBAS 1, 2 Y 3
+
 model = Sequential()
 model.add(Conv3D(7, kernel_size=(3, 3, 3),
                         activation='relu',
@@ -20,3 +22,4 @@ model.add(Dense(30, activation='relu', kernel_initializer='he_uniform'))
 model.add(Dense(2, activation='softmax'))
 
 #Esta es la red inicial con estructura tipo AlexNet 3D utilizada para la formación del modelo final
+#Cabe resaltar que esta red se utilizaó en las primeras 3 pruebas de la fase de entrenamiento y validación
