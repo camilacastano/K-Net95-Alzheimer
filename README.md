@@ -3,11 +3,11 @@ El proyecto denominado "**Implementación de un modelo predictivo basado en rede
 
 Esta fue una tesis realizada con el fin de desarrollar nuevas técnicas que sirvan para la detección de enfermedades neurodegenerativas y así, permitir que más personas puedan obtener un diagnóstico más confiable y preciso para su debido tratamiento.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+🧠🧠🧠
 
 _Los archivos encontrados en el repositorio fueron utilizados a lo largo del proyecto. Cabe aclarar que en las carpetas presentes solamente se encuentran 5 paquetes de imágenes en cada una, esto con el fin de mostrar un ejemplo de los datos seleccionados ya que son bastante pesados. Solamente se incluyeron los archivos de la base de datos ADNI, las imágenes ofrecidas por la clínica NO se publicarán en este repositorio por cuestiones de confidencialidad._
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+🧠🧠🧠
 
 ## **Resumen**
 La enfermedad del Alzheimer es un trastorno neurológico que causa la pérdida de autonomía y memoria en las personas que la padecen. Debido al aumento de casos de este padecimiento y la falta de precisión de las herramientas de diagnóstico se da paso al desarrollo de nuevas herramientas capaces de disminuir esta problemática. El objetivo principal de este trabajo investigativo es implementar un modelo de red neuronal convolucional tridimensional con estructura base tipo AlexNet3D para obtener la predicción de un posible diagnóstico de la enfermedad Alzheimer (AD) a partir del análisis de imágenes por resonancia magnética, utilizando como etapa temprana el síndrome de deterioro cognitivo leve (MCI). Este proyecto
