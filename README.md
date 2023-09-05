@@ -1,5 +1,5 @@
 # K-Net95-Alzheimer
-El proyecto denominado "Implementación de un modelo predictivo basado en redes neuronales convolucionales 3D en el paso de deterioro cognitivo leve a Alzheimer sobre imágenes por resonancia magnética" muestra una estructura de red neuronal convolucional 3D cuyo objetivo es servir como apoyo médico en la detección temprana del Alzheimer.
+El proyecto denominado "**Implementación de un modelo predictivo basado en redes neuronales convolucionales 3D en el paso de deterioro cognitivo leve a Alzheimer sobre imágenes por resonancia magnética**" muestra una estructura de red neuronal convolucional 3D cuyo objetivo es servir como apoyo médico en la detección temprana del Alzheimer.
 
 Esta fue una tesis realizada con el fin de desarrollar nuevas técnicas que sirvan para la detección de enfermedades neurodegenerativas y así, permitir que más personas puedan obtener un diagnóstico más confiable y preciso para su debido tratamiento.
 
@@ -27,7 +27,7 @@ Cabe resaltar que se realizó una división del 100% de los datos. El 70% se con
 Se monitoreó el avance de la red a partir de los resultados obtenidos de exactitud (_accuracy_), pérdida (_loss_) y las curvas de aprendizaje presentadas por estos valores. A partir de estos resultados, fue necesaria la modificación de la red base que se planteó durante la fase de Estructura y configuración. Parte de los cambios fueron el aumento de neuronas por capa, cantidad de paquetes de imágenes en cada prueba, variación de las funciones de activación, entre otros.
 
 ### **Prueba**
-Estas pruebas fueron divididas en 3. Primero, fue la modificación de parámetros que fue anteriormente explicada, en la cual se realizaron 10 pruebas totales para la obtención de la red final. Luego, se realizó una comparación entre la red obtenida y denominada "_K-Net95_" con otros modelos conocidos (UNet3D y ResNet3D) para determinar cual es mejor en factores de rendimiento, precisión y capacidad computacional, para este paso se utilizó una cantidad de paquetes de imágenes similar en cada modelo. Por último, se prueba la red obtenida con el grupo de prueba (30% del total de los datos) para así determinar la capacidad que tiene la red de clasificar un paciente enfermo (1) de un paciente sano (0) a partir de una predicción.
+Estas pruebas fueron divididas en 3. Primero, fue la modificación de parámetros que fue anteriormente explicada, en la cual se realizaron 10 pruebas totales para la obtención de la red final. Luego, se realizó una comparación entre la red obtenida y denominada "_K-Net95_" con otros modelos conocidos (_UNet3D_ y _ResNet3D_) para determinar cual es mejor en factores de rendimiento, precisión y capacidad computacional, para este paso se utilizó una cantidad de paquetes de imágenes similar en cada modelo. Por último, se prueba la red obtenida con el grupo de prueba (30% del total de los datos) para así determinar la capacidad que tiene la red de clasificar un paciente enfermo (1) de un paciente sano (0) a partir de una predicción.
 
 
 ## Gracias por leer! 🪄
