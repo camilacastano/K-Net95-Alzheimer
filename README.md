@@ -4,7 +4,9 @@ El proyecto denominado "**Implementación de un modelo predictivo basado en rede
 Esta fue una tesis realizada con el fin de desarrollar nuevas técnicas que sirvan para la detección de enfermedades neurodegenerativas y así, permitir que más personas puedan obtener un diagnóstico más confiable y preciso para su debido tratamiento.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-Los archivos encontrados en el repositorio fueron utilizados a lo largo del proyecto. Cabe aclarar que en las carpetas presentes solamente se encuentran 5 paquetes de imágenes en cada una, esto con el fin de mostrar un ejemplo de los datos seleccionados ya que son bastante pesados. Solamente se incluyeron los archivos de la base de datos ADNI, las imágenes ofrecidas por la clínica NO se publicarán en este repositorio por cuestiones de confidencialidad.
+
+_Los archivos encontrados en el repositorio fueron utilizados a lo largo del proyecto. Cabe aclarar que en las carpetas presentes solamente se encuentran 5 paquetes de imágenes en cada una, esto con el fin de mostrar un ejemplo de los datos seleccionados ya que son bastante pesados. Solamente se incluyeron los archivos de la base de datos ADNI, las imágenes ofrecidas por la clínica NO se publicarán en este repositorio por cuestiones de confidencialidad._
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## **Resumen**
