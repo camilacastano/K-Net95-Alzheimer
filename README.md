@@ -1,43 +1,38 @@
 # K-Net95-Alzheimer
-El proyecto denominado "**Implementación de un modelo predictivo basado en redes neuronales convolucionales 3D en el paso de deterioro cognitivo leve a Alzheimer sobre imágenes por resonancia magnética**" muestra una estructura de red neuronal convolucional 3D cuyo objetivo es servir como apoyo médico en la detección temprana del Alzheimer.
+The project entitled “**Implementation of a predictive model based on 3D convolutional neural networks for the transition from mild cognitive impairment to Alzheimer’s disease using magnetic resonance imaging**” presents a 3D convolutional neural network architecture whose objective is to serve as medical support for the early detection of Alzheimer’s disease.
 
-Esta fue una tesis realizada con el fin de desarrollar nuevas técnicas que sirvan para la detección de enfermedades neurodegenerativas y así, permitir que más personas puedan obtener un diagnóstico más confiable y preciso para su debido tratamiento.
+This was a thesis carried out with the aim of developing new techniques to support the detection of neurodegenerative diseases and thus enable more people to obtain a more reliable and accurate diagnosis for appropriate treatment.
 
-🧠🧠🧠🧠🧠🧠🧠🧠🧠
+##
 
-_Los archivos encontrados en el repositorio fueron utilizados a lo largo del proyecto. Cabe aclarar que en las carpetas presentes solamente se encuentran 5 paquetes de imágenes en cada una, esto con el fin de mostrar un ejemplo de los datos seleccionados ya que son bastante pesados. Solamente se incluyeron los archivos de la base de datos ADNI, las imágenes ofrecidas por la clínica NO se publicarán en este repositorio por cuestiones de confidencialidad._
+_The files found in the repository were used throughout the project. It should be noted that the folders provided contain only five image packages each, solely for the purpose of illustrating an example of the selected data, as the full datasets are considerably large. Only files from the ADNI database were included; the images provided by the clinic will not be published in this repository due to confidentiality considerations._
 
-🧠🧠🧠🧠🧠🧠🧠🧠🧠
+##
 
-## **Resumen**
-La enfermedad del Alzheimer es un trastorno neurológico que causa la pérdida de autonomía y memoria en las personas que la padecen. Debido al aumento de casos de este padecimiento y la falta de precisión de las herramientas de diagnóstico se da paso al desarrollo de nuevas herramientas capaces de disminuir esta problemática. El objetivo principal de este trabajo investigativo es implementar un modelo de red neuronal convolucional tridimensional con estructura base tipo AlexNet3D para obtener la predicción de un posible diagnóstico de la enfermedad Alzheimer (AD) a partir del análisis de imágenes por resonancia magnética, utilizando como etapa temprana el síndrome de deterioro cognitivo leve (MCI). Este proyecto
-brindará la explicación de cada fase planteada, las cuales fueron dividas en selección de las bases de datos, elección de características, procesamiento de los datos, desarrollo del modelo para su entrenamiento y validación, y por último, resultados obtenidos a partir de las pruebas de predicción. Con las cuales pudo obtenerse un porcentaje del 72,222 %, permitiendo catalogar al modelo K-Net95 como una red estable y eficiente, a pesar de las limitaciones computacionales a las que se vio limitado el proyecto.
+### **1. Databases**
+The well-known ADNI repository was used for the training and validation phases. For the testing phase, the database provided by the _Comfamiliar_ clinic in Pereira, Colombia was used.
 
-### **Bases de datos**
-Se utilizó el conocido repositorio ADNI para las fases de entrenamiento y validación. Para la fase de prueba se contó con la base de datos brindada por la clínica _Comfamiliar_ de Pereira.
+### **2. Feature selection**
+The selection of a middle-to-advanced age group (50 to 80 years) was fundamental in order to allow for better comparison among the magnetic resonance imaging datasets. The weighting used was T1.
 
-### **Selección de características**
-Fue fundamental la selección de un grupo de mediana-avanzada edad (50 a 80 años) para así disponer de una mejor comparación entre los paquetes de imágenes de resonancia magnética. La ponderación utilizada fue T1.
+### **3. Image processing**
+Continuing with the division in the Databases section, the methods used for the training and validation phases differed from those used in the testing phase.
 
-### **Procesamiento de imágenes**
-Siguiendo con la división en la sección de Bases de datos, los métodos utilizados para las fases de entrenamiento y validación fueron diferentes a los de la fase de prueba.
+For the initial phases, the _FreeSurfer_ software was used to generate a clean three-dimensional brain model. For the testing phase, a lighter method that allowed faster acquisition of image datasets was used, known as _FastSurfer_, which is based on the technique presented by the software used in the earlier phases.
 
-Para las primeras fases, se utilizó el software _FreeSurfer_ para la generación del modelo tridimensional del cerebro limpio. Para la fase de prueba, se utilizó un método más liviano que permitiera obtener los paquetes de imágenes de forma más rápida denominada _FastSurfer_, la cual está basada en la técnica presentada por el software de las primeras fases.
+### **4. Structure and configuration**
+The structure of the final neural network was based on the _AlexNet_ architecture, which is notable for its fully connected and pooling layers, enabling deep learning of three-dimensional features. This architecture was modified so that it could receive magnetic resonance imaging datasets during the training, validation, and testing phases, thereby facilitating the detection of relevant features and patterns for the identification and classification of diseased and healthy patients.
 
-### **Estructura y configuración**
-Se basó la estructura de la red neuronal final con la arquitectura _AlexNet_, destacada por sus capas totalmente conectadas y de agrupación, permitiendo un aprendizaje profundo de características tridimensionales. Esta estructura fue modificada para que pudiera recibir los paquetes de imágenes de resonancia magnética en las fases de entrenamiento, validación y prueba facilitando así la detección de características y patrones relevantes para ña detección y clasificación de un paciente enfermo y un paciente sano.
+### **5. Training and validation**
+The progress of the network was monitored based on the results obtained for accuracy, loss, and the learning curves derived from these metrics. Based on these results, it was necessary to modify the base network proposed during the Structure and Configuration phase. Some of the changes included increasing the number of neurons per layer, adjusting the number of image datasets used in each experiment, and varying the activation functions, among others.
 
-Cabe resaltar que se realizó una división del 100% de los datos. El 70% se concentró en las fases de entrenamiento y validación, minetras que el 30% restante fue destinado para la fase de prueba
-
-### **Entrenamiento y validación**
-Se monitoreó el avance de la red a partir de los resultados obtenidos de exactitud (_accuracy_), pérdida (_loss_) y las curvas de aprendizaje presentadas por estos valores. A partir de estos resultados, fue necesaria la modificación de la red base que se planteó durante la fase de Estructura y configuración. Parte de los cambios fueron el aumento de neuronas por capa, cantidad de paquetes de imágenes en cada prueba, variación de las funciones de activación, entre otros.
-
-### **Prueba**
-Estas pruebas fueron divididas en 3. Primero, fue la modificación de parámetros que fue anteriormente explicada, en la cual se realizaron 10 pruebas totales para la obtención de la red final. Luego, se realizó una comparación entre la red obtenida y denominada "_K-Net95_" con otros modelos conocidos (_UNet3D_ y _ResNet3D_) para determinar cual es mejor en factores de rendimiento, precisión y capacidad computacional, para este paso se utilizó una cantidad de paquetes de imágenes similar en cada modelo. Por último, se prueba la red obtenida con el grupo de prueba (30% del total de los datos) para así determinar la capacidad que tiene la red de clasificar un paciente enfermo (1) de un paciente sano (0) a partir de una predicción.
+### **6. Testing**
+These experiments were divided into three stages. First, parameter modifications previously described were carried out, in which a total of ten experiments were conducted to obtain the final network. Next, a comparison was performed between the resulting network, referred to as “K-Net95,” and other well-known models (_UNet3D_ and _ResNet3D_) to determine which performs better in terms of efficiency, accuracy, and computational capacity. For this comparison, a similar number of image datasets was used for each model. Finally, the resulting network was evaluated using the test group (30% of the total data) in order to determine its ability to classify a diseased patient (1) versus a healthy patient (0) based on a prediction.
 
 
-## Gracias por leer! 🪄
-Muchas gracias por leer sobre mi proyecto, espero te pueda servir para tu trabajo o entretenimmiento. La inteligencia artificial es una gran herramienta que podrá abrir nuevos caminos para la ciencia. Este trabajo es realmente significativo para mí y me alegra poder publicarlo y que más personas puedan ver una de las muchas aplicaciones de esta nueva tecnología.
+##
+
+### Thank you for being interested <3
 
 
 
