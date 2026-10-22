@@ -1,4 +1,4 @@
-#PRUEBAS 1, 2 Y 3
+#tests 1, 2 & 3
 
 model = Sequential()
 model.add(Conv3D(7, kernel_size=(3, 3, 3),
