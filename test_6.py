@@ -1,4 +1,4 @@
-#PRUEBA 6
+#test 6
 
 model = Sequential()
 model.add(Conv3D(16, kernel_size=(3, 3, 3),
