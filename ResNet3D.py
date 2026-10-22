@@ -1,4 +1,4 @@
-#RED TIPO RESNET3D
+#ResNet3D architecture
 
     model = Sequential()
     model.add(Conv3D(8, kernel_size=(3, 3, 3), strides=(1, 1, 1),
