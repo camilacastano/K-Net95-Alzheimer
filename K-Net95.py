@@ -1,4 +1,4 @@
-#RED FINAL
+#FINAL ARCHITECTURE
 
 model = Sequential()
 model.add(Conv3D(32, kernel_size=(3, 3, 3),
@@ -38,5 +38,5 @@ model.add(Dropout(0.1))
 model.add(Dense(2, activation='softmax'))
 
 
-# Esta es la estructura modificada final utilizada para la etapa de prueba.
-# Cabe destacar que el nombre de esta red fue escogido en honor a Kendrick Lamar y su cancion N95!!
+# This is the final modified structure that I used for the final testing step
+# It's important for me that you know this name wa inspired by Kendrick Lamar's song N95!!
